@@ -10,7 +10,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addPeteButton, .addRhiButton{
   padding:5px 12px;
   float:right;
 }
@@ -21,8 +21,40 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
+.blinkyDancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
 }
+
+.dancer{
+  position:absolute;
+}
+
+img{
+  max-width: 80px;
+  position:absolute;
+}
+.peteDancer{
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+   from {
+       -webkit-transform: rotate(0deg);
+   }
+   to {
+       -webkit-transform: rotate(359deg);
+   }
+}
+
+.rhiDancer{
+
+}
+
+/* IMAGE LINKS *
+dancingPete: http://i.imgur.com/4qGrKhL.png
+poleDancingPete: http://i.imgur.com/x9JTIP3.png
+dancingPete2: http://i.imgur.com/LT9TO9W.png
+dancingPete3: http://i.imgur.com/vojxDIF.png
+ *****   *****/
