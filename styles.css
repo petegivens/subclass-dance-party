@@ -35,7 +35,7 @@ img{
   max-width: 80px;
   position:absolute;
 }
-.peteDancer{
+.spinning{
   -webkit-animation: rotation 2s infinite linear;
 }
 
@@ -46,10 +46,6 @@ img{
    to {
        -webkit-transform: rotate(359deg);
    }
-}
-
-.rhiDancer{
-
 }
 
 /* IMAGE LINKS *

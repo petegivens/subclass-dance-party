@@ -1,5 +1,5 @@
 var PeteDancer = function(top, left, timeBetweenSteps) {
-  this.node = $('<img class="peteDancer" src="http://i.imgur.com/4qGrKhL.png">');
+  this.node = $('<img class="dancer" src="http://i.imgur.com/4qGrKhL.png">');
   Dancer.call(this, top, left, timeBetweenSteps);
 };
 
@@ -14,9 +14,11 @@ PeteDancer.prototype.step = function() {
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
-  this.$node.animate({maxWidth: '200px'}, 'slow');
+  this.$node.animate({maxWidth: '150px'}, 'slow');
   this.$node.animate({maxWidth: '80px'}, 'slow');
 //  this.$node.toggle();
+};
 
-
+PeteDancer.prototype.lineUp = function() {
+  this.setPosition(200);
 };

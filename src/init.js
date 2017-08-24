@@ -30,4 +30,14 @@ $(document).ready(function() {
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
+
+  $('#lineUpButton').on('click', function(event) {
+    window.dancers.forEach(x => {
+      x.lineUp();
+    });
+  });
+
+  $('#spinButton').on('click', function(event) {
+    $('.dancer').toggleClass('spinning');
+  })
 });
